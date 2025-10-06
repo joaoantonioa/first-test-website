@@ -1,8 +1,12 @@
-/* Transparent ActiveCampaign form styling matching provided design */
+@import url("https://fonts.bunny.net/css?family=ibm-plex-sans:400,500");
+
+/* Estilo transparente para o formulário ActiveCampaign */
 #_form_3_ {
   background: transparent !important;
   box-shadow: none !important;
-  padding: 32px 36px !important;
+  padding: 0 !important;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif !important;
+  color: #ffffff !important;
 }
 
 #_form_3_ ._form-content {
@@ -11,23 +15,21 @@
 
 #_form_3_ ._form_element,
 #_form_3_ ._button-wrapper {
-  margin-bottom: 22px !important;
+  margin-bottom: 20px !important;
 }
 
 #_form_3_ ._form-label,
 #_form_3_._inline-form ._form-title,
 #_form_3_ .sms_consent_message {
   color: #ffffff !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.04em !important;
-  text-transform: uppercase !important;
 }
 
-#_form_3_ .sms_consent_message {
-  font-size: 12px !important;
-  line-height: 1.5 !important;
-  text-transform: none !important;
+#_form_3_ ._form-label {
+  font-weight: 500 !important;
+  font-size: 14px !important;
   letter-spacing: normal !important;
+  text-transform: none !important;
+  margin-bottom: 6px !important;
 }
 
 #_form_3_ input[type="text"],
@@ -36,20 +38,24 @@
 #_form_3_ textarea {
   background: transparent !important;
   border: none !important;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.65) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.55) !important;
   color: #ffffff !important;
   border-radius: 0 !important;
   padding: 10px 0 !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
+  line-height: 1.4 !important;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif !important;
 }
 
 #_form_3_ textarea {
-  min-height: 110px !important;
+  min-height: 120px !important;
+  resize: vertical !important;
 }
 
 #_form_3_ input::placeholder,
 #_form_3_ textarea::placeholder {
   color: rgba(255, 255, 255, 0.7) !important;
+  opacity: 1 !important;
   text-transform: none !important;
 }
 
@@ -61,20 +67,21 @@
 
 #_form_3_ input._has_error,
 #_form_3_ textarea._has_error {
-  border-bottom-color: #F37C7B !important;
+  border-bottom-color: #f37c7b !important;
+}
+
+/* Ajustes para o intl-tel-input */
+#_form_3_ .iti {
+  width: 100% !important;
 }
 
 #_form_3_ .iti input {
-  background: transparent !important;
-  border: none !important;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.65) !important;
-  color: #ffffff !important;
-  border-radius: 0 !important;
-  padding: 10px 0 !important;
+  padding-left: 52px !important;
 }
 
-#_form_3_ .iti--separate-dial-code .iti__selected-flag {
+#_form_3_ .iti--allow-dropdown .iti__selected-flag {
   background: transparent !important;
+  border-radius: 0 !important;
 }
 
 #_form_3_ .iti__selected-dial-code,
@@ -85,41 +92,26 @@
 
 #_form_3_ .iti__country-list {
   background: rgba(0, 0, 0, 0.85) !important;
-  color: #ffffff !important;
 }
 
-#_form_3_ ._submit {
-  background: #111111 !important;
-  color: #ffffff !important;
-  border-radius: 999px !important;
-  border: none !important;
-  padding: 14px 42px !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.08em !important;
-  text-transform: uppercase !important;
-}
-
-#_form_3_ ._submit:hover,
-#_form_3_ ._submit:focus {
-  box-shadow: none !important;
-  background: #000000 !important;
+#_form_3_ .sms_consent_message {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
 }
 
 #_form_3_ ._form-branding {
-  opacity: 0.7 !important;
+  display: none !important;
 }
 
 @media (max-width: 600px) {
-  #_form_3_ {
-    padding: 24px !important;
-  }
-
   #_form_3_ input[type="text"],
   #_form_3_ input[type="tel"],
   #_form_3_ input[type="date"],
-  #_form_3_ textarea,
+  #_form_3_ textarea {
+    font-size: 14px !important;
+  }
+
   #_form_3_ .iti input {
-    font-size: 15px !important;
+    padding-left: 48px !important;
   }
 }

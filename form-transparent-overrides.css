@@ -1,0 +1,125 @@
+/* Transparent ActiveCampaign form styling matching provided design */
+#_form_3_ {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 32px 36px !important;
+}
+
+#_form_3_ ._form-content {
+  padding: 0 !important;
+}
+
+#_form_3_ ._form_element,
+#_form_3_ ._button-wrapper {
+  margin-bottom: 22px !important;
+}
+
+#_form_3_ ._form-label,
+#_form_3_._inline-form ._form-title,
+#_form_3_ .sms_consent_message {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+}
+
+#_form_3_ .sms_consent_message {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+#_form_3_ input[type="text"],
+#_form_3_ input[type="tel"],
+#_form_3_ input[type="date"],
+#_form_3_ textarea {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.65) !important;
+  color: #ffffff !important;
+  border-radius: 0 !important;
+  padding: 10px 0 !important;
+  font-size: 16px !important;
+}
+
+#_form_3_ textarea {
+  min-height: 110px !important;
+}
+
+#_form_3_ input::placeholder,
+#_form_3_ textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-transform: none !important;
+}
+
+#_form_3_ input:focus,
+#_form_3_ textarea:focus {
+  outline: none !important;
+  border-bottom-color: #ffffff !important;
+}
+
+#_form_3_ input._has_error,
+#_form_3_ textarea._has_error {
+  border-bottom-color: #F37C7B !important;
+}
+
+#_form_3_ .iti input {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.65) !important;
+  color: #ffffff !important;
+  border-radius: 0 !important;
+  padding: 10px 0 !important;
+}
+
+#_form_3_ .iti--separate-dial-code .iti__selected-flag {
+  background: transparent !important;
+}
+
+#_form_3_ .iti__selected-dial-code,
+#_form_3_ .iti__country-list .iti__country-name,
+#_form_3_ .iti__country-list .iti__dial-code {
+  color: #ffffff !important;
+}
+
+#_form_3_ .iti__country-list {
+  background: rgba(0, 0, 0, 0.85) !important;
+  color: #ffffff !important;
+}
+
+#_form_3_ ._submit {
+  background: #111111 !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  border: none !important;
+  padding: 14px 42px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+#_form_3_ ._submit:hover,
+#_form_3_ ._submit:focus {
+  box-shadow: none !important;
+  background: #000000 !important;
+}
+
+#_form_3_ ._form-branding {
+  opacity: 0.7 !important;
+}
+
+@media (max-width: 600px) {
+  #_form_3_ {
+    padding: 24px !important;
+  }
+
+  #_form_3_ input[type="text"],
+  #_form_3_ input[type="tel"],
+  #_form_3_ input[type="date"],
+  #_form_3_ textarea,
+  #_form_3_ .iti input {
+    font-size: 15px !important;
+  }
+}
